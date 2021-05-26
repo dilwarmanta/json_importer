@@ -1,0 +1,10 @@
+jsonimporter.config:
+  path: '/admin/structure/jsonimporter'
+  defaults:
+    _form: '\Drupal\jsonimporter\Form\JsonForm'
+    _title: 'JsonImport'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

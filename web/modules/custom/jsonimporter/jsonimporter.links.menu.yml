@@ -1,0 +1,6 @@
+jsonimporter.config:
+  title: 'Import JSON here'
+  route_name: jsonimporter.config
+  description: 'Import your JSONs here'
+  parent: system.admin_structure
+  weight: 99

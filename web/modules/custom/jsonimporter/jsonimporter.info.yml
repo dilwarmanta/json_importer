@@ -1,0 +1,6 @@
+name: JSON importer
+type: module
+description: 'Turn JSON into node'
+package: MRM
+
+core_version_requirement: 9.x
