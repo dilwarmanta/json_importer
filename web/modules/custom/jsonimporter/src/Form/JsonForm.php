@@ -73,7 +73,10 @@ class JsonForm extends ConfigFormBase
         'uid' => '1',
         'status' => 1,
         'title' => $pdf_json['Title'],
-        'field_pdf_body' => $pdf_json['PDF body'],
+        'field_pdf_body' => [
+          'value' => $pdf_json['PDF body'],
+          'format' => 'full_html',
+        ],
       ));
 
       $node->save();
