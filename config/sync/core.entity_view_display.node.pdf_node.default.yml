@@ -1,0 +1,28 @@
+uuid: e44eb2f4-79d1-4837-a794-01659a78bfd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pdf_node.field_pdf_body
+    - node.type.pdf_node
+  module:
+    - text
+    - user
+id: node.pdf_node.default
+targetEntityType: node
+bundle: pdf_node
+mode: default
+content:
+  field_pdf_body:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

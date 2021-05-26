@@ -1,0 +1,22 @@
+uuid: d846029f-4cef-4be9-b430-1c715eed8bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pdf_node.field_pdf_body
+    - node.type.pdf_node
+  module:
+    - user
+id: node.pdf_node.teaser
+targetEntityType: node
+bundle: pdf_node
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pdf_body: true

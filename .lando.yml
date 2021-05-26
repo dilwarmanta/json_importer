@@ -1,0 +1,35 @@
+name: json-importer
+recipe: drupal9
+
+config:
+  php: '7.4'
+  via: nginx
+  webroot: web
+  drush: "*"
+  xdebug: false
+
+services:
+  database:
+    type: mariadb
+    portforward: 3307
+
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  node:
+    type: node:11
+    globals:
+      gulp-cli: latest
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  drupal:
+    cmd:
+      - "/app/vendor/bin/drupal"
+      - "--root=/app/web"

@@ -1,0 +1,17 @@
+uuid: 559da972-f01d-4012-a148-f08ca02bc788
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'PDF node'
+type: pdf_node
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
