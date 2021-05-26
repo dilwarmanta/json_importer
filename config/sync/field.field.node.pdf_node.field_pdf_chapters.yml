@@ -1,0 +1,31 @@
+uuid: 2578090e-27a8-47d1-a1a2-0eb0f35f2fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_chapters
+    - node.type.pdf_node
+    - paragraphs.paragraphs_type.pdf_chapter
+  module:
+    - entity_reference_revisions
+id: node.pdf_node.field_pdf_chapters
+field_name: field_pdf_chapters
+entity_type: node
+bundle: pdf_node
+label: 'PDF chapters'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pdf_chapter: pdf_chapter
+    target_bundles_drag_drop:
+      pdf_chapter:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

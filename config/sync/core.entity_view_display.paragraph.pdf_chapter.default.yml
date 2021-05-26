@@ -1,0 +1,31 @@
+uuid: 0a19b4c5-850d-484b-86b2-ff20d817e160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pdf_chapter.field_chapter_body
+    - field.field.paragraph.pdf_chapter.field_chapter_title
+    - paragraphs.paragraphs_type.pdf_chapter
+  module:
+    - text
+id: paragraph.pdf_chapter.default
+targetEntityType: paragraph
+bundle: pdf_chapter
+mode: default
+content:
+  field_chapter_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_chapter_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

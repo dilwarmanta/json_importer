@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.pdf_node.field_pdf_body
+    - field.field.node.pdf_node.field_pdf_chapters
     - node.type.pdf_node
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.pdf_node.default
@@ -19,6 +21,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_pdf_chapters:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   links:
     weight: 100

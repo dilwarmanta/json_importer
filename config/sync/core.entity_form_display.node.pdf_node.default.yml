@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.pdf_node.field_pdf_body
+    - field.field.node.pdf_node.field_pdf_chapters
     - node.type.pdf_node
   module:
+    - paragraphs
     - path
     - text
 id: node.pdf_node.default
@@ -26,6 +28,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_pdf_chapters:
+    type: entity_reference_paragraphs
+    weight: 123
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   path:
     type: path

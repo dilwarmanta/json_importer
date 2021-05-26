@@ -1,0 +1,22 @@
+uuid: a80658d0-fba2-4e2c-8e2e-8ff76799e79c
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - importertheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: importertheme_help
+theme: importertheme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

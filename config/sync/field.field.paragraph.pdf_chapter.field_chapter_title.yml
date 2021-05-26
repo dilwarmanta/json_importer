@@ -1,0 +1,19 @@
+uuid: 284a07d5-e480-4456-9af8-41fb78dc3267
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chapter_title
+    - paragraphs.paragraphs_type.pdf_chapter
+id: paragraph.pdf_chapter.field_chapter_title
+field_name: field_chapter_title
+entity_type: paragraph
+bundle: pdf_chapter
+label: 'Chapter title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

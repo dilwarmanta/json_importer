@@ -1,0 +1,21 @@
+uuid: 619b3f98-6918-4fec-bd50-80a79a6b34e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chapter_body
+    - paragraphs.paragraphs_type.pdf_chapter
+  module:
+    - text
+id: paragraph.pdf_chapter.field_chapter_body
+field_name: field_chapter_body
+entity_type: paragraph
+bundle: pdf_chapter
+label: 'Chapter body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

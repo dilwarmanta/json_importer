@@ -1,0 +1,10 @@
+uuid: bf3acc1d-4f3e-4325-a38e-31e61b394402
+langcode: en
+status: true
+dependencies: {  }
+id: pdf_chapter
+label: 'PDF chapter'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

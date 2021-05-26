@@ -5,6 +5,7 @@ namespace Drupal\jsonimporter\Form;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
 
 class JsonForm extends ConfigFormBase
 {
@@ -67,6 +68,31 @@ class JsonForm extends ConfigFormBase
     $jsonout = json_decode($json, TRUE);
 
     foreach ($jsonout as $pdf_json) {
+//      // Create multiple new paragraphs
+//      $multiParagraph1 = Paragraph::create([
+//        'type' => 'paragraph_machine_name',
+//        'field_machine_name' => 'Field value',
+//      ]);
+//      $multiParagraph2 = Paragraph::create([
+//        'type' => 'paragraph_machine_name',
+//        'field_machine_name' => 'Field value',
+//      ]);
+//      $multiParagraph1->save();
+//      $multiParagraph2->save();
+//      $i = 1;
+      foreach ($pdf_json['chapters'] as $chapter) {
+//        dd($chapter);die;
+        $paragraph
+      }
+      $paras = [];
+      foreach($paragraphs as $para) {
+        dd($para->id());
+        $paras = [
+          'target_id' => $para->id(),
+          'target_revision_id' => $para->getRevisionId(),
+        ];
+      }
+      dd($paras);die;
       $node = Node::create(array(
         'type' => 'pdf_node',
         'langcode' => 'en',

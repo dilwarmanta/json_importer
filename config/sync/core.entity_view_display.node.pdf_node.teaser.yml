@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.pdf_node.field_pdf_body
+    - field.field.node.pdf_node.field_pdf_chapters
     - node.type.pdf_node
   module:
     - user
@@ -20,3 +21,4 @@ content:
     region: content
 hidden:
   field_pdf_body: true
+  field_pdf_chapters: true

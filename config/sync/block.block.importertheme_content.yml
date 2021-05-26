@@ -1,0 +1,22 @@
+uuid: 25c9528d-8c84-48ab-9358-f36aaf0dc012
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - importertheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: importertheme_content
+theme: importertheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
